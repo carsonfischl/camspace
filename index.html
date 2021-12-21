@@ -150,8 +150,9 @@
 				
 				function growShrinkLogo() {
 				  var Logo = document.getElementById("Logo")
-				  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+				  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
 					Logo.style.width = '23%';
+					Logo.style.transition = 'width 2s, height 2s';
 				  } else {
 					Logo.style.width = '100%';
 				  }
